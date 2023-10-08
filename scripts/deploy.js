@@ -19,7 +19,7 @@ async function main() {
   const contract = await CoinFlip.deploy({value: initialAmount});
 
   await contract.deploy();
-  console.log(`CoinFlip contract deployed to o${contract.address}`);
+  console.log(`CoinFlip contract deployed to ${contract.address}`);
 
   await sleep(45 * 1000);
 
